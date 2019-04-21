@@ -35,8 +35,8 @@ let appData = {
         for (let i = 0; i < 1; i++)    {
             let items = prompt('Что принесет дополнительный доход? (Перечислите через запятую)', '');
         if ((typeof(items) )=== 'string' && items != null && items != '') {
-            appData.income = items.split(', ');    // Записываем через запятую и пробел
-            appData.income.push(prompt('Может что-то еще?'));
+            appData.income = items.split(', ');    //Метод split осуществляет разбиение строки в массив по указанному разделителю
+            appData.income.push(prompt('Может что-то еще?')); //push Добавить елемент к массиву
                 // Вывод данных на страницу
             document.write('Способы доп. заработка: ');
             appData.income.forEach(function(item, i, arr) {
